@@ -1,0 +1,18 @@
+{
+  "name": "chess",
+  "version": "1.0.0",
+  "description": "this is the chess  and its vipul negi sir ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vipul negi",
+  "license": "ISC",
+  "dependencies": {
+    "chess.js": "^1.0.0-beta.8",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "postcss": "^8.4.49",
+    "socket.io": "^4.8.1"
+  }
+}

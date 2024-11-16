@@ -1,0 +1,33 @@
+
+PS C:\Users\Acer\OneDrive\Documents\Chess> npm i express
+PS C:\Users\Acer\OneDrive\Documents\Chess> npm install socket.io
+PS C:\Users\Acer\OneDrive\Documents\Chess> npm install chess.js
+
+what is socket io
+what is the chess.js
+
+
+🚀 Project: Real-Time Multiplayer Chess Game
+💻 Technologies: Node.js, Socket.IO, Chess.js, HTML/CSS, JavaScript, EJS, TailwindCSS
+
+I developed a full-stack real-time multiplayer chess game that allows players to compete with each other or watch as spectators, featuring a custom adjustable countdown timer for each player. The project showcases my skills in JavaScript, Socket.IO, and Chess.js to create a seamless, interactive experience.
+
+Key Features:
+Real-Time Gameplay: Players can make moves in real time, with updates broadcasted instantly to all connected clients using Socket.IO.
+Dynamic Role Assignment: Automatically assigns roles as White, Black, or Spectator, depending on the number of players.
+Custom Timer: Each player has a countdown timer that can be customized before the match starts. The timer stops and switches when turns change, ensuring fair play.
+Responsive Chessboard UI: Built with HTML/CSS and TailwindCSS, the chessboard adapts to different screen sizes while maintaining an intuitive drag-and-drop interface for moving pieces.
+Move Validation & Check Alerts: Leveraged Chess.js to handle move validation, check, checkmate, and stalemate conditions.
+Spectator Mode: Allows additional users to join as spectators and view the game in real-time.
+Game Over Notifications: Alerts players when checkmate, stalemate, or time expiration occurs.
+Challenges Overcome:
+Implemented bidirectional communication to handle player moves and timers, ensuring synchronization across all clients.
+Built a custom time management system to handle different game durations, allowing users to set their own time limits before starting.
+Used Chess.js for accurate chess rule enforcement, preventing illegal moves and highlighting checks.
+What I Learned:
+This project deepened my understanding of real-time web applications and reinforced best practices for full-stack development. I gained hands-on experience with managing state across multiple clients, handling asynchronous events, and optimizing user interactions for a smooth gaming experience.
+
+🔗 GitHub Repository
+Feel free to connect and discuss this project or any collaboration opportunities!
+
+
