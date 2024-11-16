@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="/public/css/text.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    /* your styles go here */
+    /* Chessboard container */
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    grid-template-rows: repeat(8, minmax(0, 1fr));
+    width: 400px;
+    height: 400px;
+    transform: rotate(0deg);
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+/* Chessboard squares */
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.square.light {
+    background: #f0d9b5;
+}
+
+.square.dark {
+    background: #b58863;
+}
+
+
+/* Chess pieces */
+.piece {
+    font-size: 36px;
+    cursor: pointer; /* Change this to indicate it's clickable */
+    user-select: none; /* Prevent text selection */
+}
+
+.piece.white {
+    color: #fff;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
+}
+
+.piece.black {
+    color: #000;
+}
+
+/* Drag and Drop */
+.piece.draggable {
+    cursor: grab;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+/* Flipped board for opponent */
+.flipped {
+    transform: rotate(180deg);
+}
+
+.flipped .piece {
+    transform: rotate(180deg);
+}
+/* Turn indicator light */
+#turn-indicator {
+    background-color: grey; /* Default color */
+    transition: background-color 0.3s ease;
+}
+
+</style>
+<body>
+    <div class="w-full h-screen flex items-center justify-center bg-zinc-900">
+       
+        <div class="chessboard w-96 h-96"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="/js/chessgame.js"></script>
+</body>
+</html>
